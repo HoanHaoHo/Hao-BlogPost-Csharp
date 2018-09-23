@@ -14,7 +14,7 @@
         
         
     }
-    else 
+    else if(User.Identity.IsAuthenticated)
     {
         @Html.ActionLink("Create New", "Create")
     }
