@@ -358,3 +358,7 @@ C:\Users\SD14\Desktop\BlogExercise\BlogApplication\obj\Debug\BlogApplication.csp
 C:\Users\SD14\Desktop\BlogExercise\BlogApplication\obj\Debug\BlogApplication.csproj.CopyComplete
 C:\Users\SD14\Desktop\BlogExercise\BlogApplication\obj\Debug\BlogApplication.dll
 C:\Users\SD14\Desktop\BlogExercise\BlogApplication\obj\Debug\BlogApplication.pdb
+C:\Users\SD14\Desktop\BlogExercise\BlogApplication\bin\PagedList.dll
+C:\Users\SD14\Desktop\BlogExercise\BlogApplication\bin\PagedList.Mvc.dll
+C:\Users\SD14\Desktop\BlogExercise\BlogApplication\bin\PagedList.xml
+C:\Users\SD14\Desktop\BlogExercise\BlogApplication\bin\PagedList.Mvc.xml
