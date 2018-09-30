@@ -36,12 +36,12 @@ namespace BlogApplication.Controllers
                 {
                     
                     var body = "<p>Email From: <bold>{0}</bold>({1})</p><p> Message:</p><p>{2}</p> ";
-                    var from = ConfigurationManager.AppSettings["username"];
+                    var from = ConfigurationManager.AppSettings["emailto"];
                     model.Body = "This is a message from your portfolio site.  The name and the email of the contacting";
 
                     var email = new MailMessage(from,ConfigurationManager.AppSettings["emailto"])
                     {
-                        Subject = "Portfolio Contact Email",
+                        Subject = model.Subject,
                         Body = string.Format(body, model.FromName, model.FromEmail,
                                              model.Body),
                         IsBodyHtml = true
@@ -49,7 +49,9 @@ namespace BlogApplication.Controllers
 
                     var svc = new PersonalEmail();
                     await svc.SendAsync(email);
-                    return View(new EmailModel());
+                    email.ReplyToList.Add(new MailAddress(model.FromEmail));
+                    ModelState.Clear();
+                    return View();
                 }
                 catch (Exception ex)
                 {

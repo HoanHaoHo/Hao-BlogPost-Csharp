@@ -49,6 +49,7 @@ namespace BlogApplication
                 }
             };
         }
+
     }
     public class EmailService : IIdentityMessageService
     {
